@@ -59,6 +59,8 @@ public class ListViewAdapter extends BaseAdapter {
 		HashMap<String, Object> map = list.get(pos);
 		holder.getTxtEntry().setText((CharSequence) map.get(IConstants.TEXT_COLUMN));
 		holder.getImgEntry().setImageResource((Integer) map.get(IConstants.IMAGE_COLUMN));
+		holder.getTxtDetail().setText((CharSequence) map.get(IConstants.TEXT_DETAIL_COLUMN));
+		holder.getImgDetail().setImageResource((Integer) map.get(IConstants.IMAGE_DETAIL_COLUMN));
 		holder.setIrCode((String) map.get(IConstants.CODE_COLUMN));
 		
 		return convertView;
@@ -67,6 +69,8 @@ public class ListViewAdapter extends BaseAdapter {
 	public class ViewHolder {
 		private TextView txtEntry;
 		private ImageView imgEntry;
+		private TextView txtDetail;
+		private ImageView imgDetail;
 		private String irCode;
 		
 		public TextView getTxtEntry() {
@@ -80,6 +84,18 @@ public class ListViewAdapter extends BaseAdapter {
 		}
 		public void setImgEntry(ImageView imgEntry) {
 			this.imgEntry = imgEntry;
+		}
+		public TextView getTxtDetail() {
+			return txtDetail;
+		}
+		public void setTxtDetail(TextView txtDetail) {
+			this.txtDetail = txtDetail;
+		}
+		public ImageView getImgDetail() {
+			return imgDetail;
+		}
+		public void setImgDetail(ImageView imgDetail) {
+			this.imgDetail = imgDetail;
 		}
 		public String getIrCode() {
 			return irCode;

@@ -27,6 +27,8 @@ public interface IConstants {
 	
 	public static final String TEXT_COLUMN = "txtColumn";
     public static final String IMAGE_COLUMN = "imgColumn";
+	public static final String TEXT_DETAIL_COLUMN = "txtDetailColumn";
+    public static final String IMAGE_DETAIL_COLUMN = "imgDetailColumn";
     public static final String CODE_COLUMN = "codeColumn";
     
     public static final String POWER_ALL = "POWER_ALL";
