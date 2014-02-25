@@ -71,6 +71,8 @@ public class ControllerActivity extends Activity {
     	HashMap<String, Object> tmp = new HashMap<String, Object>();
     	tmp.put(IConstants.TEXT_COLUMN, "Samsung Power");
     	tmp.put(IConstants.IMAGE_COLUMN, R.drawable.ic_launcher);
+		tmp.put(IConstants.TEXT_DETAIL_COLUMN, "Samsung Power");
+    	tmp.put(IConstants.IMAGE_DETAIL_COLUMN, R.drawable.ic_launcher);
     	tmp.put(IConstants.CODE_COLUMN, hex2dec(IConstants.POWER_SAMSUNG));
     	
     	lst.add(tmp);
@@ -78,6 +80,8 @@ public class ControllerActivity extends Activity {
     	tmp = new HashMap<String, Object>();
     	tmp.put(IConstants.TEXT_COLUMN, "LG Power ON");
     	tmp.put(IConstants.IMAGE_COLUMN, R.drawable.ic_launcher);
+		tmp.put(IConstants.TEXT_DETAIL_COLUMN, "Samsung Power");
+    	tmp.put(IConstants.IMAGE_DETAIL_COLUMN, R.drawable.ic_launcher);
     	tmp.put(IConstants.CODE_COLUMN, hex2dec(IConstants.POWER_ON_LG));
     	
     	lst.add(tmp);
@@ -85,6 +89,8 @@ public class ControllerActivity extends Activity {
     	tmp = new HashMap<String, Object>();
     	tmp.put(IConstants.TEXT_COLUMN, "LG Power OFF");
     	tmp.put(IConstants.IMAGE_COLUMN, R.drawable.ic_launcher);
+		tmp.put(IConstants.TEXT_DETAIL_COLUMN, "Samsung Power");
+    	tmp.put(IConstants.IMAGE_DETAIL_COLUMN, R.drawable.ic_launcher);
     	tmp.put(IConstants.CODE_COLUMN, hex2dec(IConstants.POWER_OFF_LG));
     	
     	lst.add(tmp);
@@ -92,6 +98,8 @@ public class ControllerActivity extends Activity {
     	tmp = new HashMap<String, Object>();
     	tmp.put(IConstants.TEXT_COLUMN, "Power");
     	tmp.put(IConstants.IMAGE_COLUMN, R.drawable.ic_launcher);
+		tmp.put(IConstants.TEXT_DETAIL_COLUMN, "Samsung Power");
+    	tmp.put(IConstants.IMAGE_DETAIL_COLUMN, R.drawable.ic_launcher);
     	tmp.put(IConstants.CODE_COLUMN, IConstants.POWER_ALL);
     	
     	lst.add(tmp);
