@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.SparseArray;
 import android.view.Menu;
@@ -20,10 +21,11 @@ import es.edu.android.whatsthat.adapter.ListViewAdapter;
 import es.edu.android.whatsthat.adapter.ListViewAdapter.ViewHolder;
 import es.edu.android.whatsthat.helper.InfraredHelper;
 import es.edu.android.whatsthat.util.IConstants;
-import es.edu.android.whatsthat.util.*;
+import es.edu.android.whatsthat.util.ToastLogger;
 
 public class ControllerActivity extends Activity {
 	ToastLogger LOG = new ToastLogger(this);
+	Context ctx = this;
 	
 	Object irdaService;
 	Method irWrite;

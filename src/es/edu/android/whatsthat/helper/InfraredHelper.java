@@ -14,8 +14,8 @@ public class InfraredHelper {
 	SparseArray<String> irData;
 	
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public InfraredHelper(Activity ctx) {
-		irdaService = ctx.getSystemService(IConstants.SERVICE_IRDA);
+	public InfraredHelper(Activity activity) {
+		irdaService = activity.getSystemService(IConstants.SERVICE_IRDA);	//TODO permisos
 		
 		Class c = irdaService.getClass();
 		Class p[] = { String.class };
