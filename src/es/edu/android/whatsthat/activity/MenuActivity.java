@@ -9,9 +9,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import es.edu.android.whatsthat.R;
+import es.edu.android.whatsthat.util.*;
 
 public class MenuActivity extends Activity {
-	
+	ToastLogger LOG = new ToastLogger(this);
 	private Context ctx;
 	
 	public Button btViewAll;
@@ -59,6 +60,7 @@ public class MenuActivity extends Activity {
 		public void onClick(View v) {
 			if (this._class != null) {
 				Intent i = new Intent(_ctx, _class);
+				LOG.log(i.toString());
 				startActivity(i);
 			}
 		}

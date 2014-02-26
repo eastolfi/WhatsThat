@@ -20,8 +20,10 @@ import es.edu.android.whatsthat.adapter.ListViewAdapter;
 import es.edu.android.whatsthat.adapter.ListViewAdapter.ViewHolder;
 import es.edu.android.whatsthat.helper.InfraredHelper;
 import es.edu.android.whatsthat.util.IConstants;
+import es.edu.android.whatsthat.util.*;
 
 public class ControllerActivity extends Activity {
+	ToastLogger LOG = new ToastLogger(this);
 	
 	Object irdaService;
 	Method irWrite;
@@ -34,7 +36,7 @@ public class ControllerActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_controller);
-        
+        LOG.log("oncreate");
         ListView listControls = (ListView) findViewById(R.id.listControls);
         
         populateList();
@@ -67,6 +69,7 @@ public class ControllerActivity extends Activity {
     
     private void populateList() {
     	lst = new ArrayList<HashMap<String, Object>>();
+		LOG.log("populating");
     	
     	HashMap<String, Object> tmp = new HashMap<String, Object>();
     	tmp.put(IConstants.TEXT_COLUMN, "Samsung Power");
@@ -103,6 +106,8 @@ public class ControllerActivity extends Activity {
     	tmp.put(IConstants.CODE_COLUMN, IConstants.POWER_ALL);
     	
     	lst.add(tmp);
+		
+		LOG.log("end populating");
     	
 //    	tmp = new HashMap<String, Object>();
 //    	tmp.put(IConstants.TEXT_COLUMN, "TEST");
