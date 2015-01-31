@@ -22,6 +22,7 @@ import es.edu.android.whatsthat.adapter.ListViewAdapter.ViewHolder;
 import es.edu.android.whatsthat.helper.InfraredHelper;
 import es.edu.android.whatsthat.util.IConstants;
 import es.edu.android.whatsthat.util.ToastLogger;
+import android.widget.*;
 
 public class ControllerActivity extends Activity {
 	ToastLogger LOG = new ToastLogger(this);
@@ -36,6 +37,7 @@ public class ControllerActivity extends Activity {
 	ArrayList<HashMap<String, Object>> lst;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+		LOG.log("Before all");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_controller);
         LOG.log("oncreate");

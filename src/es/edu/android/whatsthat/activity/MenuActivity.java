@@ -10,13 +10,14 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import es.edu.android.whatsthat.R;
 import es.edu.android.whatsthat.util.*;
+import android.widget.*;
 
 public class MenuActivity extends Activity {
 	ToastLogger LOG = new ToastLogger(this);
 	private Context ctx;
 	
-	public Button btViewAll;
 	public Button btPowerAll;
+	public Button btViewAll;
 	public Button btAdmin;
 	public Button btSettings;
 
@@ -27,12 +28,12 @@ public class MenuActivity extends Activity {
 		
 		ctx = this;
 		
-		btViewAll = (Button) findViewById(R.id.view_all);
 		btPowerAll = (Button) findViewById(R.id.power_view_all);
-		
-		btViewAll.setOnClickListener(new mOnClickListener(null));
+		btViewAll = (Button) findViewById(R.id.view_all);
 		
 		btPowerAll.setOnClickListener(new mOnClickListener(ControllerActivity.class));
+		
+		btViewAll.setOnClickListener(new mOnClickListener(null));
 	}
 
 	@Override
@@ -58,7 +59,7 @@ public class MenuActivity extends Activity {
 		
 		@Override
 		public void onClick(View v) {
-			if (this._class != null) {
+			if (_class != null) {
 				Intent i = new Intent(_ctx, _class);
 				LOG.log(i.toString());
 				startActivity(i);
