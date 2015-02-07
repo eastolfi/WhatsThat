@@ -2,8 +2,16 @@
 <resources>
 
     <string name="app_name">WhatsThat?</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="title_activity_menu">MenuActivity</string>
+    <string name="app_label">WhatsThat? (Beta)</string>
+
+    <string name="power_all_label">WhatsThat? - Botones de encendido</string>
+    <string name="brands_all_label">WhatsThat? - Lista con las marcas</string>
+    <string name="brand_control_label">WhatsThat? - Lista de controles</string>
+    <string name="remote_full_label">WhatsThat? - Control Remoto</string>
+    <string name="settings_label">WhatsThat? - Ajustes</string>
+    
+    <string name="action_settings">Ajustes</string>
+
+    <string name="app_credits">WhatsThat? Created by Eduardo Astolfi</string>
 
 </resources>
